@@ -3,7 +3,7 @@ import 'package:mockito/mockito.dart';
 import 'package:num_sentence/features/number_trivia/domain/entities/number_trivia.dart';
 import 'package:num_sentence/features/number_trivia/domain/repositories/number_trivia_repositoy.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:num_sentence/features/number_trivia/domain/usecases/get_concrete_number.dart';
+import 'package:num_sentence/features/number_trivia/domain/usecases/get_concrete_number_trivia.dart';
 
 import '../../../../helpers/test_helper.mocks.dart';
 
@@ -26,7 +26,7 @@ void main(){
         .thenAnswer((_) async => const Right(tNumberTrivia));
     
     // act
-    final result = await usecase.execute(number: tNumber);
+    final result = await usecase(const Params(number: tNumber));
     
     // assert
     expect(result, const Right(tNumberTrivia));
