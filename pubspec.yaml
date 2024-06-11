@@ -41,7 +41,7 @@ dependencies:
   dartz:
   http:
   shared_preferences:
-  connectivity_plus:
+  data_connection_checker_nulls:
 
 dev_dependencies:
   flutter_test:
