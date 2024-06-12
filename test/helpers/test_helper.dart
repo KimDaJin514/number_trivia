@@ -5,6 +5,7 @@ import 'package:num_sentence/features/number_trivia/data/data_source/number_triv
 import 'package:num_sentence/features/number_trivia/data/data_source/number_trivia_remote_data_source.dart';
 import 'package:num_sentence/features/number_trivia/domain/repositories/number_trivia_repositoy.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:http/http.dart' as http;
 
 @GenerateMocks(
   [
@@ -13,7 +14,8 @@ import 'package:shared_preferences/shared_preferences.dart';
     NumberTriviaLocalDataSource,
     NetworkInfo,
     DataConnectionChecker,
-    SharedPreferences
+    SharedPreferences,
+    http.Client
   ]
 )
 void main(){

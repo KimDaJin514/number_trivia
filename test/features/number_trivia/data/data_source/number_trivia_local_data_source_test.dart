@@ -39,12 +39,6 @@ void main(){
       when(mockSharedPreferences.getString(any)).thenReturn(null);
 
       // act
-      // final result = await dataSource.getLastNumberTrivia();
-
-      // assert
-      // expect(result, throwsA(const TypeMatcher<CacheException>()));
-
-      // act
       final call = dataSource.getLastNumberTrivia;
 
       // assert
