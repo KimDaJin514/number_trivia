@@ -79,7 +79,7 @@ void main(){
       setUpMockClientSuccess200();
 
       // act
-      dataSource.getRandomNumberTrivia();
+      await dataSource.getRandomNumberTrivia();
 
       // assert
       verify(mockClient.get(
